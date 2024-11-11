@@ -1,0 +1,9 @@
+Import('*')
+
+SimObject('VectorOperations.py', sim_objects=['VectorOperations'])
+Source('vector_operations.cc')
+
+DebugFlag('VECTOR', "Display Input Vectors")
+DebugFlag('RESULTCROSS', "Display Resultant value from Cross Product of two Vectors")
+DebugFlag('NORMALIZE', "Display Resultant vectors from Normalize Vectors")
+DebugFlag('RESULTSUB', "Display Resultant vectors from Subtraction of two Vectors")
